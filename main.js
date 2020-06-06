@@ -32,8 +32,15 @@ const menu = {
     addDishToCourse(courseName, dishName, dishPrice) {
         return {
             const dish = {
-                
+                return {
+                    name: this.dishName,
+                    price: this.dishPrice
+                }
+                this._courses[courseName].push(dish);
             }
         }
+    },
+    getRandomDishFromCourse(courseName) {
+        
     }
 };
